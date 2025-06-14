@@ -31,8 +31,7 @@ let Spaces = [
     coordinates: [40.72696, -73.95656],
     modeOfBooking: "Online",
     cost: "Cheap",
-    iframe: (
-      <>
+    iframe: `
         <iframe
           src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=NmdvZ2FzNTdmMG9kZG9uMWVzbnA0bGE3dWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%230B8043&amp;mode=WEEK"
           width="100%"
@@ -62,7 +61,7 @@ let Spaces = [
           data-uw-rm-iframe="gn"
         ></iframe>
       </>
-    ),
+    `,
   },
   {
     key: 4,
@@ -73,7 +72,7 @@ let Spaces = [
     neighborhood: "Lower East Side",
     borough: "Manhattan",
     coordinates: [40.71525, -73.98374],
-    modeOfBooking: "Email",
+    modeOfBooking: "Online",
     cost: "Cheap",
   },
   {
@@ -99,6 +98,16 @@ let Spaces = [
     coordinates: [40.69723, -73.93094],
     modeOfBooking: "Online",
     cost: "Cheap",
+      iframe: `
+      <iframe
+        loading="lazy"
+        src="https://calendar.google.com/calendar/u/0/embed?mode=week&src=otionfront@gmail.com"
+        width="100%"
+        height="600"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    `,
   },
   {
     key: 8,
@@ -122,22 +131,20 @@ let Spaces = [
     coordinates: [40.71667, -73.9467],
     modeOfBooking: "Email",
     cost: "Cheap",
-    iframe: (
-      <>
+    iframe:`
         <iframe
-          src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;mode=WEEK&amp;src=Y3BybnljLm9yZ19qMGpyc25hMnZuZ245ZGRpb2MwNTUwdjVhMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%230B8043"
+          src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;mode=WEEK&amp;src=Y3BybnljLm9yZ19qMGpyc25hMnZuZ245ZGRpb2MwNTUwdjVhMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%230B8043&mode=week"
           width="100%"
           height="600"
         ></iframe>
         <iframe
-          src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;mode=WEEK&amp;src=Y3BybnljLm9yZ19wdWZkZ3ZjYWxrZHIzZ2w0NGUxM3ZuMGRnc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%238E24AA"
+          src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;mode=WEEK&amp;src=Y3BybnljLm9yZ19wdWZkZ3ZjYWxrZHIzZ2w0NGUxM3ZuMGRnc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%238E24AA&mode=week"
           width="100%"
           height="600"
           frameborder="0"
           scrolling="no"
         ></iframe>
-      </>
-    ),
+        `,
   },
   {
     key: 10,
@@ -149,6 +156,13 @@ let Spaces = [
     coordinates: [40.70664, -73.93529],
     modeOfBooking: "Email",
     cost: "Cheap",
+        iframe:`
+        <iframe
+          src="https://calendar.google.com/calendar/u/0/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America/New_York&src=azJhZzVyZjRtMTB2bWZwcXYzMXQ1bWhpZzRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23515151&mode=WEEK&wmode=opaque"
+          width="100%"
+          height="600"
+        ></iframe>
+        `,
   },
   {
     key: 11,
@@ -160,13 +174,13 @@ let Spaces = [
     coordinates: [40.70336, -73.90684],
     modeOfBooking: "Online",
     cost: "Cheap",
-    iframe: (
+    iframe: `
       <iframe
         src="https://thewoods.skedda.com/booking?embedded=true"
         width="100%"
         height="600"
       ></iframe>
-    ),
+    `,
   },
   {
     key: 12,
@@ -178,13 +192,20 @@ let Spaces = [
     coordinates: [40.75677, -73.93627],
     modeOfBooking: "Email",
     cost: "Cheap",
+            iframe:`
+        <iframe
+          src="https://calendar.google.com/calendar/u/0/embed?ctz=America%2FNew_York&mode=WEEK&src=2vfnqrtssodeqec2c13ehti1ls%40group.calendar.google.com"
+          width="100%"
+          height="600"
+        ></iframe>
+        `,
   },
   {
     key: 13,
     name: "Playwrights Horizons Downtown",
-    description: "",
-    url: "https://www.playwrightshorizons.org/about/playwrights-downtown/",
-    neighborhood: "Union Square-ea",
+    description: "Many studios *and* performance spaces",
+    url: "https://www.playwrightshorizons.org/studios/booking",
+    neighborhood: "Union Square",
     borough: "Manhattan",
     coordinates: [40.7294868, -73.9922345],
     modeOfBooking: "Email",
@@ -206,7 +227,7 @@ let Spaces = [
     name: "Mark Morris Dance",
     description: "GORGEOUS STUDIOS!!!!!!!!!!!!!!!",
     url: "https://markmorrisdancegroup.org/dance-center/space-rental/",
-    neighborhood: "Downtown",
+    neighborhood: "Downtown / Ft. Greene",
     borough: "Brooklyn",
     coordinates: [40.6869728, -73.9789195],
     modeOfBooking: "Email",
@@ -215,23 +236,30 @@ let Spaces = [
   {
     key: 16,
     name: "Vangeline",
-    description: "Never been!",
+    description: "Simple, comfy studio",
     url: "https://www.vangeline.com/space-rental",
     neighborhood: "Gowanus",
     borough: "Brooklyn",
     coordinates: [40.67159, -73.99352],
-    modeOfBooking: "Email",
+    modeOfBooking: "Online",
     cost: "Cheap",
+    iframe: `
+      <iframe
+        src="https://vangeline.skedda.com/booking?embedded=true"
+        width="100%"
+        height="600"
+      ></iframe>
+    `
   },
   {
     key: 17,
-    name: "Dancewave",
-    description: "Never been!",
-    url: "https://dancewave.org/studio-rental/",
-    neighborhood: "Gowanus",
-    borough: "Brooklyn",
-    coordinates: [40.67894, -73.98246],
-    modeOfBooking: "Email",
+    name: "Bronx Academy of Arts and Dance",
+    description: "Available 24/7",
+    url: "https://www.baadbronx.org/rentals",
+    neighborhood: "Westchester Squre",
+    borough: "Bronx",
+    coordinates: [10.67894, -13.98246],
+    modeOfBooking: "Phone",
     cost: "Cheap",
   },
   {
@@ -261,7 +289,7 @@ let Spaces = [
     name: "Battery Dance",
     description: "Never been!",
     url: "https://batterydance.org/studios/",
-    neighborhood: "Around Canal Street",
+    neighborhood: "Tribeca",
     borough: "Manhattan",
     coordinates: [40.71804, -74.0035972],
     modeOfBooking: "Online",
@@ -284,7 +312,7 @@ let Spaces = [
     name: "Ballet Hispánico",
     description: "Never been!",
     url: "https://ballethispanico.org/studio-rentals",
-    neighborhood: "UWS",
+    neighborhood: "Upper West Side",
     borough: "Manhattan",
     coordinates: [40.78957, -73.9727921],
     modeOfBooking: "Email",
@@ -295,7 +323,7 @@ let Spaces = [
     name: "Dance Theatre of Harlem",
     description: "Never been!",
     url: "https://dancetheatreofharlem.org/studio-rentals/",
-    neighborhood: "West Harlem",
+    neighborhood: "Harlem, West",
     borough: "Manhattan",
     coordinates: [40.8291437, -73.9437309],
     modeOfBooking: "Email",
@@ -315,7 +343,7 @@ let Spaces = [
   {
     key: 25,
     name: "Fourth Arts Block (FABnyc)",
-    description: "Have not booked here before",
+    description: "Has cheap rates when booking 10 - 5 PM",
     url: "http://www.fabnyc.org/programs/studio-space-70/",
     neighborhood: "East Village",
     borough: "Manhattan",
@@ -436,20 +464,34 @@ let Spaces = [
   {
     key: 36,
     name: "Kestrels",
-    description: "I have not rehearsed here",
+    description: "They will only take booking requests totaling 12 hours or more, but these hours can be spread across multiple dates.",
     url: "https://www.kestrels.space/rehearsal-rental",
     neighborhood: "Gowanus",
     borough: "Brooklyn",
     coordinates: [40.673488, -73.9904637],
     modeOfBooking: "Email",
     cost: "Cheap",
+        iframe:`
+        <iframe
+          src="https://calendar.google.com/calendar/u/0/embed?src=lij0ohf5hjuf1punnjn424r7t4@group.calendar.google.com&ctz=America/New_York&wmode=opaque&mode=week"
+          width="100%"
+          height="600"
+        ></iframe>
+        <iframe
+          src="https://calendar.google.com/calendar/u/0/embed?src=sel46k22kdlguru10fpt8nu6fo@group.calendar.google.com&ctz=America/New_York&wmode=opaque&mode=week"
+          width="100%"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+        `,
   },
   {
     key: 37,
     name: "14th Street Y",
     description: "Have not ever rehearsed here",
     url: "https://www.14streety.org/about-us/rentals/",
-    neighborhood: "Union Square-ea",
+    neighborhood: "Union Square",
     borough: "Manhattan",
     coordinates: [40.673488, -73.9904637],
     modeOfBooking: "Email",
@@ -493,7 +535,7 @@ let Spaces = [
     name: "A.R.T. Spaces @ South Oxford Space",
     description: "",
     url: "https://www.art-newyork.org/studio-rehearsal",
-    neighborhood: "Ft. Greene",
+    neighborhood: "Downtown / Ft. Greene",
     borough: "Brooklyn",
     coordinates: [40.6851473, -73.975693],
     modeOfBooking: "Email",
@@ -502,8 +544,8 @@ let Spaces = [
   {
     key: 42,
     name: "Spoke the Hub",
-    description: "Never been, but seems cute!",
-    url: "https://spokethehub.org/rentals/rates-policies/",
+    description: "Vanessa, the Space Manager is wonderful!",
+    url: "https://spokethehub.org/space-rental-2/",
     neighborhood: "Park Slope",
     borough: "Brooklyn",
     coordinates: [40.675341, -73.97838],
@@ -571,7 +613,7 @@ let Spaces = [
     name: "Free Mind, The Studio",
     description: "Sounds like a wonderful spot",
     url: "https://www.freemindthestudio.com/rent-the-space",
-    neighborhood: "East Williamsburg",
+    neighborhood: "Williamsburg, East",
     borough: "Brooklyn",
     coordinates: [40.7125937, -73.9357525],
     modeOfBooking: "Email",
@@ -581,11 +623,11 @@ let Spaces = [
     key: 49,
     name: "Adelante Studios",
     description: "Haven't ever been here. They also sell beef?",
-    url: "https://www.adelantestudios.com/availability",
+    url: "https://www.adelantestudios.com/dance",
     neighborhood: "K-Town",
     borough: "Manhattan",
     coordinates: [40.7473324, -73.9872803],
-    modeOfBooking: "Email",
+    modeOfBooking: "Online",
     cost: "Not Cheap",
   },
   {
@@ -715,7 +757,7 @@ let Spaces = [
     name: "Ripley-Grier 939 8th Ave",
     description: "Have not rehearsed here",
     url: "https://ripleygrier.com/",
-    neighborhood: "Columbus Cirlce",
+    neighborhood: "Columbus Circle",
     borough: "Manhattan",
     coordinates: [40.7551091, -74.0057903],
     modeOfBooking: "Phone",
@@ -801,13 +843,23 @@ let Spaces = [
   {
     key: 70,
     name: "Houghton Hall Arts",
-    description: "You can get a discount if you mention IndieSpace!",
+    description: "A range of spaces!",
     url: "https://www.houghtonhallarts.org/spacebooking",
     neighborhood: "NoMad",
     borough: "Manhattan",
     coordinates: [40.764319, -73.9834425],
     modeOfBooking: "Online",
     cost: "Not Cheap",
+        iframe: `
+      <iframe
+        loading="lazy"
+        src="https://calendar.google.com/calendar/u/0/embed?height=600&wkst=2&ctz=America/New_York&bgcolor=%23ffffff&showTitle=0&mode=WEEK&src=Y18zYzZmYzA0MGI5YzRiZjY0NzA1NTYxM2ZiNWM2ZTBkN2EyMTc0ZGY3OTE2YzNkNmIxOGNlNmMzNzBkMGViNDc3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y182ZDE4ODc4YWYxNGFjOWQxYzljNDBmYWVhNTgxZTgwZGMzZjczYmJiMTNlMzAzMzJhM2U3Y2NhYWQ3OGI2ZWNhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y18zN2YyZTNlYTY3Mzk1MTIxMDk2MTVlYjExZjZjZjRjMjcyNDM4NGU0NjEwOGY2OTI5MjA3NjMwOWE3YjIzZGI2QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y183YTQ5ZmM0ZTNlZWY3ZmU4NDBjNzRhMTBiNjI3MTFjZjc1OTM1ZjI5MWU5YTM1YmUzZmU0NDYzNzk2YTVjZDI5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y185ZWM3NGFkZmZjZDY0MzczNDU0YjE1ZTE2NTQ2YmYwNzFhNjA1ODcwMTUyMTRmYzJmNGM3MDQ0MGMxMDM3ODE3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y181ODQ3ZDgyZmMxYWViMThlOWU5Njg0YWM0N2M1NjQyZmRkNDA3ODQ3ZTY2MzlmNTFjZmMwNTYzZjUyNjM0YzE4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y18xZDZkNDY5Mjc4NGM5MjFlYTMwZTY0NjBhZDliOTRhNTI1MWE1NWQyZWUwZDkwNWM0NDc2Y2E1ZGU0MDY1MTdkQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23D50000&color=%230B8043&color=%23F6BF26&color=%23F4511E&color=%233F51B5&color=%23E67C73&color=%238E24AA"
+        width="100%"
+        height="600"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    `
   },
   {
     key: 71,
@@ -825,7 +877,7 @@ let Spaces = [
     name: "Brooklyn Ballet",
     description: "I haven't ever been here",
     url: "https://www.brooklynballet.org/about/studio-rental",
-    neighborhood: "Downtown",
+    neighborhood: "Downtown / Ft. Greene",
     borough: "Brooklyn",
     coordinates: [40.6893542, -73.9898589],
     modeOfBooking: "Email",
@@ -1043,20 +1095,275 @@ let Spaces = [
     modeOfBooking: "Email",
     cost: "Cheap",
   },
-];
-
-export default Spaces;
-
-/*
+  {
+    key: 91,
+    name: "Baryshnikov Arts",
+    description: "Limited cheap rehearsal space, but worth trying!",
+    url: "https://baryshnikovarts.org/nyc-event-space/rental/",
+    neighborhood: "Hudson Yards",
+    borough: "Manhattan",
+    coordinates: [40.753374,-73.9991066],
+    modeOfBooking: "Email",
+    cost: "Cheap",
+  },
     {
-      "key": ,
-      "name": "",
-      "description": "",
-      "url": "",
-      "neighborhood": "",
-      "borough": "",
-      "coordinates": [],
-      "modeOfBooking": '',
-      "cost": ""
-    },
-*/
+    key: 92,
+    name: "Dance Project of Washington Heights",
+    description: "For rehearsals, classes, video shoots, events and more",
+    url: "https://www.danceprojectwh.org/#space-rentals",
+    neighborhood: "Washington Heights",
+    borough: "Manhattan",
+    coordinates: [40.8469357,-73.9422292],
+    modeOfBooking: "Online",
+    cost: "Cheap",
+  },
+      {
+    key: 93,
+    name: "MISE-EN_PLACE",
+    description: "More for music I think. Open 24/7 and has a range of musical instruments.",
+    url: "https://www.mise-en.org/subsidized-studio-rental-for-creaitive-activities/",
+    neighborhood: "Harlem, Central",
+    borough: "Manhattan",
+    coordinates: [40.7938362,-73.9325725],
+    modeOfBooking: "Email",
+    cost: "Cheap",
+  },
+  {
+    key: 94,
+    name: "Under St. Marks / Frigid",
+    description: "Run by wonderful people!",
+    url: "https://frigid.nyc/rentals/",
+    neighborhood: "East Village",
+    borough: "Manhattan",
+    coordinates: [40.7938362,-73.9325725],
+    modeOfBooking: "Online",
+    cost: "Not Cheap",
+  },
+    {
+    key: 95,
+    name: "BKCM Studio Collective",
+    description: "More for music. 17 practice studios – each home to a Steinway piano",
+    url: "https://bkcm.org/studios/",
+    neighborhood: "Park Slope",
+    borough: "Brooklyn",
+    coordinates: [40.6754144,-73.9792747],
+    modeOfBooking: "Online",
+    cost: "Cheap",
+  },
+      {
+    key: 96,
+    name: "Chhandayan studios",
+    description: "Three studios 'ideal for rehearsals, seminars, lecture-demonstrations, classes, workshops, meetings, etc'",
+    url: "https://chhandayan.org/space-rental",
+    neighborhood: "Midtown",
+    borough: "Manhattan",
+    coordinates: [40.7544415,-73.9954927],
+    modeOfBooking: "Email",
+    cost: "Not Cheap",
+  },
+        {
+    key: 97,
+    name: "Jamaica Center for Arts & Learning",
+    description: "Rehearsal spaces for dance and theater, music practice rooms, and a 99-seat black-box proscenium theater.",
+    url: "https://jcal.org/rentals",
+    neighborhood: "Jamaica",
+    borough: "Queens",
+    coordinates: [40.7039182,-73.8007385],
+    modeOfBooking: "Email",
+    cost: "Not Cheap",
+  },
+          {
+    key: 98,
+    name: "New York Center for Creativity & Dance",
+    description: "Run by the Joyce",
+    url: "https://www.joyce.org/pQOPphP/about/new-york-center-for-creativity---dance",
+    neighborhood: "East Village",
+    borough: "Manhattan",
+    coordinates: [40.7281637,-73.9850118],
+    modeOfBooking: "Email",
+    cost: "Cheap",
+  },
+            {
+    key: 99,
+    name: "K.S. J.A.M.M. Dance Troupe",
+    description: "2 fully-equipped studios",
+    url: "https://www.ksjammdancetroupe.com/RentalsArtist-Services/rentals-artist-services",
+    neighborhood: "Bed-Stuy",
+    borough: "Brooklyn",
+    coordinates: [40.686438,-73.9508081],
+    modeOfBooking: "Phone",
+    cost: "Cheap",
+    iframe: `
+      <iframe
+        loading="lazy"
+        src="https://calendar.google.com/calendar/u/0/embed?color=%23668CD9&deb=-&embed_style=WyJhdDplbWI6c3QiLCIjZTBlMGUwIiwiI2VkZWRlZCIsIiM0MTg0ZjMiLCJyb2JvdG8iLCIjNjM2MzYzIiw1MDAsIiNmZmYiXQo&eopt=0&mode=week&showCalendars=1&showPrint=0&showTz=0&src=info@ksjammdancetroupe.com"
+        width="100%"
+        height="600"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    `,
+  },
+              {
+    key: 100,
+    name: "Flamenco Vivo Carlota Santana",
+    description: "Studios built for flamencos by flamencos",
+    url: "https://flamenco-vivo.org/studios/",
+    neighborhood: "Midtown",
+    borough: "Manhattan",
+    coordinates: [40.7543012,-73.9838149],
+    modeOfBooking: "Online",
+    cost: "Cheap",
+    iframe: `
+      <iframe
+        loading="lazy"
+        src="https://calendar.google.com/calendar/u/0/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America/New_York&title=Flamenco+Vivo+Studios&showTitle=1&mode=WEEK&src=Y182Y2FmMjA3ZGIwZDllMmYxODdjMDA2MjQ2Mzc5MDc0YWI1Y2Q3MDc0MTQ2ODVhNDZkYzMyZWFhYjg5MTFlOGMyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y181ZDAxM2NjNWExMjU2MTNjNTRjZmVhNTM0MWMzMjZmYzMyMmMwZjk0MDNiMWM2ZTYyZmRhYThhZmFkM2Q4M2ZiQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y19kYmNlYWIzM2VmMDEwZjA1NmZkMDExZDJjYjI4YjdjOWUzMmYyNTZmMjEwYWJjYzQxZDY5ZDYyNTMyNWNkOTVmQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y18wbTBkdDduZHEwdTV1ODdra25ydHQyNnNqZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y184Y3ZnZDE3NDR0cTZhNTN2OGoxZ25uOHQyb0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19sYXJoMTN0aXM2NnY1NDY4OW9nZnNib3Rza0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=c3R1ZGlvYUBmbGFtZW5jby12aXZvLm9yZw&src=c3R1ZGlvYkBmbGFtZW5jby12aXZvLm9yZw&color=%238E24AA&color=%238E24AA&color=%238E24AA&color=%23D81B60&color=%23D81B60&color=%23D81B60&color=%238E24AA&color=%23D81B60"
+        width="100%"
+        height="600"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    `,
+  },
+  {
+    key: 101,
+    name: "STREB",
+    description: "Limited amount of subsidized rehearsal space available",
+    url: "https://streb.org/rentals/",
+    neighborhood: "Williamsburg",
+    borough: "Brooklyn",
+    coordinates: [40.7169759,-73.9672385],
+    modeOfBooking: "Email",
+    cost: "Cheap",
+  },
+    {
+    key: 102,
+    name: "The Center at West Park",
+    description: "An expansive high-ceiling 1,535 sq ft., column free space full of natural light with hardwood flooring and 6' mirrors",
+    url: "https://www.centeratwestpark.org/3rd-floor",
+    neighborhood: "Upper West Side",
+    borough: "Manhattan",
+    coordinates: [40.7877318,-73.9770837],
+    modeOfBooking: "Email",
+    cost: "Cheap",
+  },
+      {
+    key: 103,
+    name: "The Drama League Studio Lab",
+    description: "Does not have a sprung floor, and is not recommended for heavy choreography or dance.",
+    url: "https://dramaleague.org/rentals/",
+    neighborhood: "Tribeca",
+    borough: "Manhattan",
+    coordinates: [40.7200045,-74.0071355],
+    modeOfBooking: "Online",
+    cost: "Cheap",
+  },
+        {
+    key: 104,
+    name: "The Vineyard",
+    description: "Their spacious, column-free, sprung-floor studio features all of the amenities you might desire",
+    url: "https://vineyardtheatre.org/rent-the-studio/",
+    neighborhood: "Union Square",
+    borough: "Manhattan",
+    coordinates: [40.7352813,-73.9893902],
+    modeOfBooking: "Email",
+    cost: "Cheap",
+  },
+    {
+    key: 105,
+    name: "Playwrights Horizons Uptown",
+    description: "I assume this is in their main building",
+    url: "https://www.playwrightshorizons.org/space-rental/rosen-niarchos-rentals",
+    neighborhood: "Midtown",
+    borough: "Manhattan",
+    coordinates: [40.7585888,-73.9936497],
+    modeOfBooking: "Email",
+    cost: "Not Cheap",
+  },
+      {
+    key: 105,
+    name: "Signature Theatre",
+    description: "Their Rehearsal Studio rents on a one-week minimum lock-out, one-day rentals are considered on a case-by-case basis.",
+    url: "https://signaturetheatre.org/rent-our-space/",
+    neighborhood: "Midtown",
+    borough: "Manhattan",
+    coordinates: [40.7591805,-73.9976235],
+    modeOfBooking: "Email",
+    cost: "Not Cheap",
+  },
+  {
+    key: 106,
+    name: "JACK",
+    description: "They've got discounted rehearsal space!",
+    url: "https://www.jackny.org/jill",
+    neighborhood: "Clinton Hill",
+    borough: "Brooklyn",
+    coordinates: [40.6826399,-73.995891],
+    modeOfBooking: "Online",
+    cost: "Cheap",
+    iframe: `
+      <iframe
+        loading="lazy"
+        src="https://calendar.google.com/calendar/u/0/embed?height=600&wkst=2&ctz=America/New_York&showPrint=0&mode=WEEK&title=JACK+Rental+Availability&showCalendars=0&showTz=0&src=cmVudGFsc0BqYWNrbnkub3Jn&color=%23039BE5&wmode=opaque"
+        width="100%"
+        height="600"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    `
+  },
+    {
+    key: 107,
+    name: "The Makers' Ensemble",
+    description: "Sliding scale rates!",
+    url: "https://makersensemble.org/rentals",
+    neighborhood: "Bushwick",
+    borough: "Brooklyn",
+    coordinates: [40.6826399,-73.995891],
+    modeOfBooking: "Email",
+    cost: "Cheap",
+    iframe: `
+      <iframe
+        loading="lazy"
+        src="https://calendar.google.com/calendar/u/0/embed?src=raj8ls5rkheul42i1929dadvj8@group.calendar.google.com&ctz=America/Toronto&mode=WEEK"
+        width="100%"
+        height="600"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    `
+  },
+      {
+    key: 108,
+    name: "651 ARTS",
+    description: "An area of 12,500 square feet, including a theater, two studios, conference rooms and office space",
+    url: "https://www.651arts.org/rentals/",
+    neighborhood: "Downtown / Ft. Greene",
+    borough: "Brooklyn",
+    coordinates: [40.6826399,-73.995891],
+    modeOfBooking: "Email",
+    cost: "Not Cheap",
+  },
+        {
+    key: 109,
+    name: "American Mime Theater",
+    description: "ideal for acting, dance, and movement classes, workshops, rehearsals, and special events. With a 20x40-foot main studio, excellent lighting, a professional sound system and seating for 75 people",
+    url: "https://americanmimetheatre.org/studio/description/",
+    neighborhood: "Chelsea",
+    borough: "Manhattan",
+    coordinates: [40.7449756,-73.9959975],
+    modeOfBooking: "Email",
+    cost: "Not Cheap",
+  },
+  {
+    key: 110,
+    url: "https://www.theratnyc.com/book-online",
+    name: "The RAT NYC",
+    description: "1100sft space",
+    neighborhood: "DUMBO",
+    borough: "Brooklyn",
+    coordinates: [40.70264, -73.98719],
+    modeOfBooking: "Online",
+    cost: "Not Cheap",
+  },
+]
