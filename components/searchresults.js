@@ -1,7 +1,5 @@
 class SearchResults extends HTMLElement {
     connectedCallback() {
-        // Create main container
-
         // Create studios grid
         const studiosGrid = document.createElement('div')
         studiosGrid.className = 'studios-grid'
@@ -44,33 +42,33 @@ class SearchResults extends HTMLElement {
             neighborhoodSelect.value = ''
         }
 
-            // Function to show calendar dialog
-            function showCalendarDialog(studio) {
-                const dialog = document.querySelector('.calendar-dialog')
-                dialog.querySelector('.dialog-title').textContent = `${studio.name} Calendar`
-                dialog.querySelector('.calendar-container').innerHTML = studio.iframe
-                dialog.showModal()
-            }
+        // Function to show calendar dialog
+        function showCalendarDialog(studio) {
+            const dialog = document.querySelector('.calendar-dialog')
+            dialog.querySelector('.dialog-title').textContent = `${studio.name} Calendar`
+            dialog.querySelector('.calendar-container').innerHTML = studio.iframe
+            dialog.showModal()
+        }
 
-            // Filter and render functions
-            function filterStudios() {
-            const borough = document.getElementById('borough').value
-            const neighborhood = document.getElementById('neighborhood').value
-            const booking = document.getElementById('booking').value
-            const cost = document.getElementById('cost').value
-            const search = document.getElementById('search').value.toLowerCase()
+        // Filter and render functions
+        function filterStudios() {
+        const borough = document.getElementById('borough').value
+        const neighborhood = document.getElementById('neighborhood').value
+        const booking = document.getElementById('booking').value
+        const cost = document.getElementById('cost').value
+        const search = document.getElementById('search').value.toLowerCase()
 
-            const filteredSpaces = Spaces.filter(space => {
+        const filteredSpaces = Spaces.filter(space => {
             return (!borough || space.borough === borough) &&
-                    (!neighborhood || space.neighborhood === neighborhood) &&
-                    (!booking || space.modeOfBooking === booking) &&
-                    (!cost || space.cost === cost) &&
-                    (!search || 
+                (!neighborhood || space.neighborhood === neighborhood) &&
+                (!booking || space.modeOfBooking === booking) &&
+                (!cost || space.cost === cost) &&
+                (!search || 
                     space.name.toLowerCase().includes(search) ||
                     space.description.toLowerCase().includes(search))
             })
 
-            renderStudios(filteredSpaces)
+        renderStudios(filteredSpaces)
     }
 
     function renderStudios(studios) {
@@ -121,9 +119,6 @@ class SearchResults extends HTMLElement {
     document.getElementById('cost').addEventListener('change', filterStudios)
     document.getElementById('search').addEventListener('input', filterStudios)
 
-    // Initial render
-    renderStudios(Spaces)
-
         function getEmoji(bookingMode) {
         if (bookingMode === "Email") {
             return '📧';
@@ -135,6 +130,9 @@ class SearchResults extends HTMLElement {
         }
     
         this.appendChild(studiosGrid);
+        
+        // Initial render
+        renderStudios(Spaces)
     }
 }
 customElements.define('search-results', SearchResults);
