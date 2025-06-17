@@ -53,6 +53,9 @@ select, input {
   background: white;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: transform 0.2s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .studio-card:hover {
@@ -75,6 +78,7 @@ select, input {
 .studio-description {
   font-size: 0.9rem;
   margin-bottom: 1rem;
+  flex-grow: 1;
 }
 
 .studio-details {
@@ -82,6 +86,7 @@ select, input {
   gap: 1rem;
   font-size: 0.85rem;
   color: #666;
+  margin-bottom: 1rem;
 }
 
 .studio-tag {
@@ -90,15 +95,50 @@ select, input {
   border-radius: 4px;
 }
 
+.studio-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
 .studio-link {
-  display: inline-block;
-  margin-top: 1rem;
-  color: #2563eb;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background-color: #342E37;
+  color: white;
   text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+  flex: 1;
+  min-width: 0;
 }
 
 .studio-link:hover {
-  text-decoration: underline;
+  background-color: #474348;
+}
+
+.calendar-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #731DD8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+  flex: 1;
+  min-width: 0;
+}
+
+.calendar-button:hover {
+  background-color: #9955e8;
 }
 
 .no-results {
@@ -108,30 +148,14 @@ select, input {
   grid-column: 1 / -1;
 }
 
-.calendar-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.9rem;
-}
-
-.calendar-button:hover {
-  background-color: #45a049;
-}
-
 .calendar-dialog {
   padding: 0;
   max-width: 90vw;
   width: 800px;
   height: 80vh;
   background: white;
+  border: none;
+  border-radius: 8px;
 }
 
 .calendar-dialog::backdrop {
@@ -163,10 +187,12 @@ select, input {
   font-size: 1.5rem;
   cursor: pointer;
   padding: 0.5rem;
+  color: #666;
+  transition: color 0.2s;
 }
 
 .close-button:hover {
-  color: #666;
+  color: #333;
 }
 
 .calendar-container {
