@@ -2,12 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./src/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NYC Rehearsal Studios Directory</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="./src/main.js"></script>
+    <div class="container">
+    
+      <div class="header">
+        <h2>NYC Rehearsal Studio Directory!</h2>
+        <p>All opinions are by Travis Amiel</p>
+      </div>
+
+      <script src="./src/spacedatabase.js"></script>
+      <script src="./components/filterbar.js"></script>
+      <script src="./components/searchresults.js"></script>
+
+      <filter-bar></filter-bar>
+      <search-results></search-results>
+  </div>
   </body>
 </html>
