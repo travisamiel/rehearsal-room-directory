@@ -167,7 +167,7 @@ let Spaces = [
   {
     key: 11,
     name: "The Woods",
-    description: "Never been here!",
+    description: "Wood Flooring. 900sqft",
     url: "https://www.thewoodsuniverse.com/",
     neighborhood: "Ridgewood",
     borough: "Queens",
@@ -299,7 +299,7 @@ let Spaces = [
     key: 21,
     name: "LEIMAY Cave",
     description:
-      "According to their website, you can book up to 25 rehearsal hours a year after paying a $35 annual membership fee",
+      "You can book up to 25 FREE rehearsal hours a year, but there is a $35 annual membership fee",
     url: "https://temporary.leimay.org/studio-subsidy/#",
     neighborhood: "Williamsburg",
     borough: "Brooklyn",
@@ -343,7 +343,7 @@ let Spaces = [
   {
     key: 25,
     name: "Fourth Arts Block (FABnyc)",
-    description: "Has cheap rates when booking 10 - 5 PM",
+    description: "Has cheap rates when booking 10 am - 5 pm",
     url: "http://www.fabnyc.org/programs/studio-space-70/",
     neighborhood: "East Village",
     borough: "Manhattan",
@@ -511,7 +511,7 @@ let Spaces = [
   {
     key: 39,
     name: "Theaterlab",
-    description: "Have rehearsed here. Great space!",
+    description: "You can also see shows here!",
     url: "https://theaterlabnyc.com/rentals/",
     neighborhood: "Midtown",
     borough: "Manhattan",
@@ -522,7 +522,7 @@ let Spaces = [
   {
     key: 40,
     name: "A.R.T. Spaces@520",
-    description: "This whole building is theatres!!!",
+    description: "This whole building is theater stuff!!! so cursed",
     url: "https://www.art-newyork.org/studio-rehearsal",
     neighborhood: "Midtown",
     borough: "Manhattan",
@@ -533,7 +533,7 @@ let Spaces = [
   {
     key: 41,
     name: "A.R.T. Spaces @ South Oxford Space",
-    description: "",
+    description: "Four really nice spaces",
     url: "https://www.art-newyork.org/studio-rehearsal",
     neighborhood: "Downtown / Ft. Greene",
     borough: "Brooklyn",
@@ -556,13 +556,13 @@ let Spaces = [
     key: 43,
     name: "University Settlement",
     description:
-      "Their Multipurpose Room looks nice, and is probably good for small rehearsals",
-    url: "https://www.universitysettlement.org/rentals/houston-street-center/",
+      "Sepyer Hall is such a gem!",
+    url: "https://www.universitysettlement.org/rentals/",
     neighborhood: "Lower East Side",
     borough: "Manhattan",
     coordinates: [40.72371, -73.9925178],
     modeOfBooking: "Email",
-    cost: "Cheap",
+    cost: "Not Cheap",
   },
   {
     key: 44,
@@ -799,7 +799,7 @@ let Spaces = [
   {
     key: 65,
     name: "Theatre Row Studios",
-    description: "I haven't ever been here",
+    description: "I haven't ever rehearsed here",
     url: "https://bfany.org/theatre-row/rehearsalstudios/",
     neighborhood: "Midtown",
     borough: "Manhattan",
@@ -810,7 +810,7 @@ let Spaces = [
   {
     key: 66,
     name: "Mabou Mines",
-    description: "I haven't ever been here",
+    description: "Inside of 122 Community Arts Center, whatever the hell that is",
     url: "https://www.maboumines.org/about/rentals/",
     neighborhood: "East Village",
     borough: "Manhattan",
@@ -821,7 +821,7 @@ let Spaces = [
   {
     key: 67,
     name: "Brooklyn Art Haus",
-    description: "I haven't ever been here",
+    description: "Two rehearsal studios, a performance space, AND a podcast studio",
     url: "https://www.bkarthaus.com/studios",
     neighborhood: "Williamsburg",
     borough: "Brooklyn",
@@ -866,7 +866,7 @@ let Spaces = [
     name: "Brooklyn Comedy Collective",
     description: "Very useful spaces!!",
     url: "https://www.brooklyncc.com/rentals",
-    neighborhood: "Williamsburg",
+    neighborhood: "Williamsburg, East",
     borough: "Brooklyn",
     coordinates: [40.764319, -73.9834425],
     modeOfBooking: "Online",
@@ -1106,7 +1106,7 @@ let Spaces = [
     modeOfBooking: "Email",
     cost: "Cheap",
   },
-    {
+  {
     key: 92,
     name: "Dance Project of Washington Heights",
     description: "For rehearsals, classes, video shoots, events and more",
@@ -1117,7 +1117,7 @@ let Spaces = [
     modeOfBooking: "Online",
     cost: "Cheap",
   },
-      {
+  {
     key: 93,
     name: "MISE-EN_PLACE",
     description: "More for music I think. Open 24/7 and has a range of musical instruments.",
@@ -1139,7 +1139,7 @@ let Spaces = [
     modeOfBooking: "Online",
     cost: "Not Cheap",
   },
-    {
+  {
     key: 95,
     name: "BKCM Studio Collective",
     description: "More for music. 17 practice studios – each home to a Steinway piano",
@@ -1150,7 +1150,7 @@ let Spaces = [
     modeOfBooking: "Online",
     cost: "Cheap",
   },
-      {
+  {
     key: 96,
     name: "Chhandayan studios",
     description: "Three studios 'ideal for rehearsals, seminars, lecture-demonstrations, classes, workshops, meetings, etc'",
@@ -1161,7 +1161,7 @@ let Spaces = [
     modeOfBooking: "Email",
     cost: "Not Cheap",
   },
-        {
+  {
     key: 97,
     name: "Jamaica Center for Arts & Learning",
     description: "Rehearsal spaces for dance and theater, music practice rooms, and a 99-seat black-box proscenium theater.",
@@ -1172,7 +1172,7 @@ let Spaces = [
     modeOfBooking: "Email",
     cost: "Not Cheap",
   },
-          {
+  {
     key: 98,
     name: "New York Center for Creativity & Dance",
     description: "Run by the Joyce",
@@ -1180,10 +1180,10 @@ let Spaces = [
     neighborhood: "East Village",
     borough: "Manhattan",
     coordinates: [40.7281637,-73.9850118],
-    modeOfBooking: "Email",
-    cost: "Cheap",
+    modeOfBooking: "Online",
+    cost: "Not Cheap",
   },
-            {
+  {
     key: 99,
     name: "K.S. J.A.M.M. Dance Troupe",
     description: "2 fully-equipped studios",
@@ -1204,7 +1204,7 @@ let Spaces = [
       ></iframe>
     `,
   },
-              {
+  {
     key: 100,
     name: "Flamenco Vivo Carlota Santana",
     description: "Studios built for flamencos by flamencos",
@@ -1236,7 +1236,7 @@ let Spaces = [
     modeOfBooking: "Email",
     cost: "Cheap",
   },
-    {
+  {
     key: 102,
     name: "The Center at West Park",
     description: "An expansive high-ceiling 1,535 sq ft., column free space full of natural light with hardwood flooring and 6' mirrors",
@@ -1247,7 +1247,7 @@ let Spaces = [
     modeOfBooking: "Email",
     cost: "Cheap",
   },
-      {
+  {
     key: 103,
     name: "The Drama League Studio Lab",
     description: "Does not have a sprung floor, and is not recommended for heavy choreography or dance.",
@@ -1258,7 +1258,7 @@ let Spaces = [
     modeOfBooking: "Online",
     cost: "Cheap",
   },
-        {
+  {
     key: 104,
     name: "The Vineyard",
     description: "Their spacious, column-free, sprung-floor studio features all of the amenities you might desire",
@@ -1269,7 +1269,7 @@ let Spaces = [
     modeOfBooking: "Email",
     cost: "Cheap",
   },
-    {
+  {
     key: 105,
     name: "Playwrights Horizons Uptown",
     description: "I assume this is in their main building",
@@ -1280,7 +1280,7 @@ let Spaces = [
     modeOfBooking: "Email",
     cost: "Not Cheap",
   },
-      {
+  {
     key: 105,
     name: "Signature Theatre",
     description: "Their Rehearsal Studio rents on a one-week minimum lock-out, one-day rentals are considered on a case-by-case basis.",
@@ -1312,7 +1312,7 @@ let Spaces = [
       ></iframe>
     `
   },
-    {
+  {
     key: 107,
     name: "The Makers' Ensemble",
     description: "Sliding scale rates!",
@@ -1333,7 +1333,7 @@ let Spaces = [
       ></iframe>
     `
   },
-      {
+  {
     key: 108,
     name: "651 ARTS",
     description: "An area of 12,500 square feet, including a theater, two studios, conference rooms and office space",
@@ -1344,10 +1344,10 @@ let Spaces = [
     modeOfBooking: "Email",
     cost: "Not Cheap",
   },
-        {
+  {
     key: 109,
     name: "American Mime Theater",
-    description: "ideal for acting, dance, and movement classes, workshops, rehearsals, and special events. With a 20x40-foot main studio, excellent lighting, a professional sound system and seating for 75 people",
+    description: "A 20x40-foot main studio with excellent lighting, a professional sound system and seating for 75 people...or so they say",
     url: "https://americanmimetheatre.org/studio/description/",
     neighborhood: "Chelsea",
     borough: "Manhattan",
@@ -1366,4 +1366,81 @@ let Spaces = [
     modeOfBooking: "Online",
     cost: "Not Cheap",
   },
+  {
+    key: 111,
+    url: "https://alphaomegadance.org/at-the-ao/rentals/",
+    name: "Alpha Omega Theatrical Dance Company",
+    description: "Haven't been here, but looks great!",
+    neighborhood: "East Village",
+    borough: "Manhattan",
+    coordinates: [40.7263648,-73.9929468],
+    modeOfBooking: "Email",
+    cost: "Not Cheap",
+  },
+  {
+    key: 112,
+    url: "https://threeofusstudios.com/",
+    name: "Three of Us Studios",
+    description: "Three of Us Studios has 20 studios, ranging in size",
+    neighborhood: "Chelsea",
+    borough: "Manhattan",
+    coordinates: [40.7229875,-74.0202771],
+    modeOfBooking: "Email",
+    cost: "Not Cheap",
+  },
+  {
+    key: 113,
+    url: "https://theloftnewyork.com/rentals/",
+    name: "The LOFT",
+    description: "2100 sq ft",
+    neighborhood: "Chinatown",
+    borough: "Manhattan",
+    coordinates: [40.7196106,-74.0172518],
+    modeOfBooking: "Online",
+    cost: "Not Cheap",
+  },
+  {
+    key: 114,
+    url: "https://vibespacestudio.com/booking/",
+    name: "Vibe Space",
+    description: "Three of Us Studios has 20 studios, ranging in size",
+    neighborhood: "Chelsea",
+    borough: "Manhattan",
+    coordinates: [40.7451558,-74.0130646],
+    modeOfBooking: "Online",
+    cost: "Not Cheap",
+  },
+  {
+    key: 115,
+    url: "https://www.cre8ivenyc.com/book",
+    name: "Cre8ive",
+    description: "Many spaces!",
+    neighborhood: "Midtown",
+    borough: "Manhattan",
+    coordinates: [40.7469082,-74.0011601],
+    modeOfBooking: "Online",
+    cost: "Not Cheap",
+  },
+  {
+    key: 116,
+    url: "https://bodyandpole.com/studio-rentals/",
+    name: "Body and Pole",
+    description: "Five studios! The largest Pole and Aerial Dance studio in New York City",
+    neighborhood: "Midtown",
+    borough: "Manhattan",
+    coordinates: [40.7438253,-74.0380403],
+    modeOfBooking: "Phone",
+    cost: "Not Cheap",
+  },
+  {
+    key: 117,
+    url: "https://www.studios353.com/",
+    name: "Studios 353",
+    description: "Attractive studios and performance space for the singer, actor, and musician",
+    neighborhood: "Midtown",
+    borough: "Manhattan",
+    coordinates: [40.7620526,-74.0078974],
+    modeOfBooking: "Phone",
+    cost: "Not Cheap",
+  }
 ]
